@@ -1,0 +1,117 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic);
+/* =================================================================== 
+   @imports go above
+   =================================================================== */
+
+* {
+	box-sizing: border-box;
+}
+::-moz-selection { background: #e2e2e2; color: #fff;}
+::selection { background: #e2e2e2; color: #fff;}
+
+/* =================================================================== 
+   Clearfix
+   =================================================================== */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+ 
+.clearfix:after {
+  clear: both;
+}
+ 
+.clearfix {
+  *zoom: 1;
+}
+
+/* =================================================================== 
+   General Styles
+   =================================================================== */
+html {
+	font-size: 18px;
+}
+
+img, embed, object, video { width: 100%; }
+	
+.container {
+	max-width: 53.125%;
+	margin: 0 auto;
+	padding: 40px 3.43137254902% 20px;
+}
+
+body, h1, h2, h3, h4, h5, h5, p {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	font-size: 1vw;
+	font-weight: 300;
+}
+
+h1 { font-size: 7vw; font-weight: 400;}
+h2 { font-size: 3vw; font-weight: 100; }
+
+.container {
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.fixed {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 0;
+}
+
+.over {
+	position: relative;
+	top: 100vh;
+	left: 0;
+	right: 0;
+	z-index: 1;
+}
+
+.top-section {
+	top: 0;
+	min-height: 100vh;
+	background: url(http://erikzuuring.com/img/hero-bg.jpg) top left no-repeat;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+	.top-section article {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+	.top-section h1 {}
+	.top-section h2 {}
+	.top-section h2.down {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		transform: translateX(-50%);
+		cursor: ns-resize;
+	}
+.middle-section {
+	min-height: 50vh;
+	padding: 60px 0;
+	background: #fff;
+	background-size: cover;
+	/*box-shadow: 0 -1px 20px #999;*/
+}
+.middle-mid-section {
+	min-height: 25vh;
+	background: url(http://erikzuuring.com/img/plants-bg.jpg) top right no-repeat;
+	background-size: cover;
+}
+.middle-bot-section {
+	min-height: 35vh;
+	padding: 60px 100px;
+	background: #3FD099;
+	background-size: cover;
+	text-align: center;
+	color: #424A56;
+}
