@@ -170,6 +170,10 @@ a:focus {
    Middle Section
    =================================================================== */
 
+main {
+	background: #fff;
+}
+
 .about-section {
 	background: #fff;
 	background-size: cover;
@@ -193,7 +197,7 @@ a:focus {
 /* ========================================
 		Begin Work Section
 		======================================== */
-		section.screenshots-section {}
+		.screenshots-section {}
 
 			/* ========================================
 			Begin Screenshots
@@ -212,10 +216,39 @@ a:focus {
 					width: 100%;
 					overflow: hidden;
 				}
+				.screenshot-grid li:nth-child(2) figure {
+					-webkit-animation-delay: .25s;
+							animation-delay: .25s;
+				}
+				.screenshot-grid li:nth-child(3) figure {
+					-webkit-animation-delay: .5s;
+							animation-delay: .5s;
+				}
+				.screenshot-grid li:nth-child(4) figure {
+					-webkit-animation-delay: .75s;
+							animation-delay: .75s;
+				}
+				.screenshot-grid li:nth-child(5) figure {
+					-webkit-animation-delay: 1s;
+							animation-delay: 1s;
+				}
+				.screenshot-grid li:nth-child(6) figure {
+					-webkit-animation-delay: 1.25s;
+							animation-delay: 1.25s;
+				}
+				.screenshot-grid li:nth-child(7) figure {
+					-webkit-animation-delay: 1.5s;
+							animation-delay: 1.5s;
+				}
+				.screenshot-grid li:nth-child(8) figure {
+					-webkit-animation-delay: 1.75s;
+							animation-delay: 1.75s;
+				}
 					.screenshot-grid li > figure > img {
 						width: 100%;
 						transition: all .75s ease;
 					}
+
 					.screenshot-grid figcaption {
 						position: absolute;
 						top: 0;
@@ -255,10 +288,10 @@ a:focus {
 							.screenshot-grid .caption a > i {
 								font-size: 1.9444444444rem;
 							}
-.work-section {
-	min-height: 25vh;
-	background: linear-gradient(135deg, rgba(222, 255, 90, .65) 10%, rgba(0, 182, 255, .65) 90%), url(../img/arctic-bg.jpg) center center no-repeat;
-	background-size: cover;
+.features-section {
+	min-height: 50vh;
+	background: url(../img/mountain-bg.jpg) center center no-repeat;
+	background-size: 100%;
 }
 .middle-bot-section {
 	min-height: 35vh;
