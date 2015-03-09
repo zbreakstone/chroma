@@ -12,16 +12,16 @@
    =================================================================== */
 .clearfix:before,
 .clearfix:after {
-  content: " ";
-  display: table;
+	content: " ";
+	display: table;
 }
  
 .clearfix:after {
-  clear: both;
+	clear: both;
 }
  
 .clearfix {
-  *zoom: 1;
+	*zoom: 1;
 }
 
 /* =================================================================== 
@@ -60,7 +60,7 @@ a:focus {
 	position: fixed;
 	left: 0;
 	right: 0;
-	z-index: -1; /* Fix for iPhone scrolling */
+	z-index: 1; /* Fix for iPhone scrolling */
 }
 
 .over {
