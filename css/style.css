@@ -376,6 +376,9 @@ Begin Work Section
 	.fixed {
 		position: static;
 	}
+	.over {
+		position: static;
+	}
 	.top-section .main-nav .logo {
 		display: block;
 		width: 100%;
