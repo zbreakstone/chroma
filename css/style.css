@@ -105,7 +105,16 @@ a:focus {
 		float: left;
 		width: 20%;
 	}
-
+	.top-section h1 {}
+	.top-section h2 {}
+	.top-section h2.down {
+		position: absolute;
+		bottom: 20px;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		        transform: translateX(-50%);
+		cursor: ns-resize;
+	}
 	/* ---- Begin Logo SVG Styles ---- */
 	.top-section .main-nav .logo svg circle {
 		transition: all .5s ease;
@@ -155,16 +164,6 @@ a:focus {
 			        transform: translate(-50%, -50%);
 			width: 100%;
 		}
-	.top-section h1 {}
-	.top-section h2 {}
-	.top-section h2.down {
-		position: absolute;
-		bottom: 20px;
-		left: 50%;
-		-webkit-transform: translateX(-50%);
-		        transform: translateX(-50%);
-		cursor: ns-resize;
-	}
 
 /* =================================================================== 
    Middle Section
@@ -195,113 +194,171 @@ main {
 	}
 
 /* ========================================
-		Begin Work Section
-		======================================== */
-		.screenshots-section {}
+Begin Work Section
+======================================== */
+.screenshots-section {}
 
-			/* ========================================
-			Begin Screenshots
-			======================================== */
-			ul.screenshot-grid {
-				max-width: calc(100% + 1px);
-				list-style: none;
-				font-size: 0; /* Necessary to remove inherent spacing from li in html */
+	/* ========================================
+	Begin Screenshots
+	======================================== */
+	ul.screenshot-grid {
+		max-width: calc(100% + 1px);
+		list-style: none;
+		font-size: 0; /* Necessary to remove inherent spacing from li in html */
+	}
+		.screenshot-grid li {
+			position: relative;
+			float: left; /* Necessary to remove inherent spacing from li in html */
+			width: calc(100% / 4);
+		}
+		.screenshot-grid li > figure {
+			width: 100%;
+			overflow: hidden;
+		}
+			.screenshot-grid li:nth-child(2) figure {
+				-webkit-animation-delay: .25s;
+						animation-delay: .25s;
 			}
-				.screenshot-grid li {
-					position: relative;
-					float: left; /* Necessary to remove inherent spacing from li in html */
-					width: calc(100% / 4);
-				}
-				.screenshot-grid li > figure {
-					width: 100%;
-					overflow: hidden;
-				}
-				.screenshot-grid li:nth-child(2) figure {
-					-webkit-animation-delay: .25s;
-							animation-delay: .25s;
-				}
-				.screenshot-grid li:nth-child(3) figure {
-					-webkit-animation-delay: .5s;
-							animation-delay: .5s;
-				}
-				.screenshot-grid li:nth-child(4) figure {
-					-webkit-animation-delay: .75s;
-							animation-delay: .75s;
-				}
-				.screenshot-grid li:nth-child(5) figure {
-					-webkit-animation-delay: 1s;
-							animation-delay: 1s;
-				}
-				.screenshot-grid li:nth-child(6) figure {
-					-webkit-animation-delay: 1.25s;
-							animation-delay: 1.25s;
-				}
-				.screenshot-grid li:nth-child(7) figure {
-					-webkit-animation-delay: 1.5s;
-							animation-delay: 1.5s;
-				}
-				.screenshot-grid li:nth-child(8) figure {
-					-webkit-animation-delay: 1.75s;
-							animation-delay: 1.75s;
-				}
-					.screenshot-grid li > figure > img {
-						width: 100%;
-						transition: all .75s ease;
-					}
+			.screenshot-grid li:nth-child(3) figure {
+				-webkit-animation-delay: .5s;
+						animation-delay: .5s;
+			}
+			.screenshot-grid li:nth-child(4) figure {
+				-webkit-animation-delay: .75s;
+						animation-delay: .75s;
+			}
+			.screenshot-grid li:nth-child(5) figure {
+				-webkit-animation-delay: 1s;
+						animation-delay: 1s;
+			}
+			.screenshot-grid li:nth-child(6) figure {
+				-webkit-animation-delay: 1.25s;
+						animation-delay: 1.25s;
+			}
+			.screenshot-grid li:nth-child(7) figure {
+				-webkit-animation-delay: 1.5s;
+						animation-delay: 1.5s;
+			}
+			.screenshot-grid li:nth-child(8) figure {
+				-webkit-animation-delay: 1.75s;
+						animation-delay: 1.75s;
+			}
+			.screenshot-grid li > figure > img {
+				width: 100%;
+				transition: all .75s ease;
+			}
 
-					.screenshot-grid figcaption {
-						position: absolute;
-						top: 0;
-						left: 0;
-						padding: 25% 0;
-						display: block;
-						opacity: 0;
-						width: 100%;
-						height: 100%;
-						background: rgba(63, 97, 132, 0.85);
-						font-size: 0.7777777778rem;
-						text-transform: uppercase;
-						transition: all .75s ease;
-					}
-					.screenshot-grid figcaption.green-caption { background: rgba(222, 255, 90, .25); }
-					.screenshot-grid figcaption.green-blue-caption { background: rgba(155, 233, 140, .25); }
-					.screenshot-grid figcaption.blue-green-caption { background: rgba(76, 206, 202, .25); }
-					.screenshot-grid figcaption.blue-caption { background: rgba(0, 182, 255, .25); }
-					.screenshot-grid figure:hover img {
-						-webkit-transform: scale(1.3);
-						        transform: scale(1.3);
-					}
-					.screenshot-grid figure:hover figcaption, .screenshot-grid figure:hover figcaption > div {
-						opacity: 1;
-					}
-						.screenshot-grid div.caption {
-							position: absolute;
-							top: 50%;
-							left: 50%;
-							-webkit-transform: translate(-50%, -50%);
-							        transform: translate(-50%, -50%);
-							text-align: center;
-						}
-							.screenshot-grid .caption a, .screenshot-grid .caption i, .screenshot-grid .caption p {
-								color: #fff;
-							}
-							.screenshot-grid .caption a > i {
-								font-size: 1.9444444444rem;
-							}
-.features-section {
+	.screenshot-grid figcaption {
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 25% 0;
+		display: block;
+		opacity: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(63, 97, 132, 0.85);
+		font-size: 0.7777777778rem;
+		text-transform: uppercase;
+		transition: all .75s ease;
+	}
+	.screenshot-grid figcaption.green-caption { background: rgba(222, 255, 90, .25); }
+	.screenshot-grid figcaption.green-blue-caption { background: rgba(155, 233, 140, .25); }
+	.screenshot-grid figcaption.blue-green-caption { background: rgba(76, 206, 202, .25); }
+	.screenshot-grid figcaption.blue-caption { background: rgba(0, 182, 255, .25); }
+	.screenshot-grid figure:hover img {
+		-webkit-transform: scale(1.3);
+		        transform: scale(1.3);
+	}
+	.screenshot-grid figure:hover figcaption, .screenshot-grid figure:hover figcaption > div {
+		opacity: 1;
+	}
+		.screenshot-grid div.caption {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+			text-align: center;
+		}
+			.screenshot-grid .caption a, .screenshot-grid .caption i, .screenshot-grid .caption p {
+				color: #fff;
+			}
+			.screenshot-grid .caption a > i {
+				font-size: 1.9444444444rem;
+			}
+
+/* ========================================
+Begin Work Section
+======================================== */
+
+.feature-intro-section {}
+	article.feature-intro-section {
+		position: relative;
+		min-height: 57vh;
+		background: url(../img/mountain-bg.jpg) center center no-repeat;
+		background-size: cover;
+	}
+
+	.feature-intro-section h2 {
+		position: absolute;
+		bottom: 70px;
+		left: 0;
+		right: 0;
+	}
+.feature-section {
+	position: relative;
 	min-height: 50vh;
-	background: url(../img/mountain-bg.jpg) center center no-repeat;
-	background-size: 100%;
-}
-.middle-bot-section {
-	min-height: 35vh;
-	padding: 60px 100px;
-	background: #3FD099;
+	background: linear-gradient(135deg, rgba(222, 255, 90, .65) 10%, rgba(0, 182, 255, .65) 90%), url(../img/arctic-bg.jpg) center left no-repeat;
 	background-size: cover;
-	text-align: center;
-	color: #424A56;
+	color: #fff;
 }
-
+	.feature-section li.feature {
+		position: relative;
+		display: inline-block;
+		float: left;
+		width: calc(100% / 3);
+		height: 50vh;
+		font-size: 3.1666666667rem;
+		transition: all .5s ease;
+	}
+	.feature-section li.feature:nth-child(1):hover {
+		background: linear-gradient(135deg, rgba(196, 246, 109, .65) 10%, rgba(144, 229, 148, .65) 90%);
+	}
+	.feature-section li.feature:nth-child(2):hover {
+		background: linear-gradient(135deg, rgba(144, 229, 148, .65) 10%, rgba(73, 206, 201, .65) 90%);
+	}
+	.feature-section li.feature:nth-child(3):hover {
+		background: linear-gradient(135deg, rgba(73, 206, 201, .65) 10%, rgba(0, 182, 255, .65) 90%);
+	}
+		.feature div.feature-icon {
+			position: absolute;
+			display: inline-block;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+			transition: all .5s ease;
+		}
+			.feature-section li.feature:hover div.feature-icon {
+				opacity: 0;
+			}
+		.feature div.feature-desc {
+			position: absolute;
+			display: block;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+			padding: 0 7.81269074%;
+			font-size: 1.1111111111rem;
+			opacity: 0;
+			-webkit-transform: translate(-50%, -50%);
+			        transform: translate(-50%, -50%);
+			transition: all 1.25s ease;
+		}
+			.feature-section li.feature:hover div.feature-desc {
+				opacity: 1;
+			}
 
 
 
@@ -309,9 +366,10 @@ main {
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {}
 @media only screen and (max-device-width : 767px) {
 	html {
-		font-size: 14px;
+		font-size: 23px;
 	}
-	h2 { font-size: 4em; font-weight: 300; }
+	h1 { font-size: 6rem; }
+	h2 { font-size: 4rem; font-weight: 300; }
 	.container {
 		max-width: 100%;
 	}
@@ -330,6 +388,14 @@ main {
 		display: block;
 		width: 100%;
 		float: none;
+	}
+	article.feature-intro-section {
+		min-height: 25vh;
+	}
+	.feature-section li.feature {
+		display: block;
+		width: 100%;
+		height: 25vh;
 	}
 }
 
