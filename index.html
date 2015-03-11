@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<section class="top-section fixed white-text">
+		<section class="top-section fixed white-text" id="home">
 			<div class="main-nav">
 				<div class="container clearfix">
 					<div class="logo">
@@ -42,11 +42,11 @@
 					</div>
 					<nav class="clearfix">
 						<ul>
-							<li><a href="#">home</a></li>
-							<li><a href="#">about</a></li>
-							<li><a href="#">work</a></li>
-							<li><a href="#">features</a></li>
-							<li><a href="#">contact</a></li>
+							<li><a href="#home">home</a></li>
+							<li><a href="#about">about</a></li>
+							<li><a href="#work">work</a></li>
+							<li><a href="#features">features</a></li>
+							<li><a href="#contact">contact</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -59,13 +59,15 @@
 					</div>
 				</article>
 				<h2 class="down">
-					<i class="fa fa-chevron-down"></i>
+					<a href="#about">
+						<i class="fa fa-chevron-down"></i>
+					</a>
 				</h2>
 			</div>
 		</section>
 
 		<main class="over">
-			<section class="about-section">
+			<section class="about-section" id="about">
 				<div class="container">
 					<article class="text-center clearfix">
 						<h2>We create things.</h2>
@@ -76,7 +78,7 @@
 				</div>
 			</section>
 
-			<section class="screenhshots-section">
+			<section class="screenhshots-section" id="work">
 				<article class="screenshots" id="screenshots">
 					<ul class="screenshot-grid clearfix">
 						<li>
@@ -196,7 +198,7 @@
 			</section>
 
 	
-			<section class="feature-section">
+			<section class="feature-section" id="features">
 				<article class="feature-intro-section">
 					<div class="container">
 						<h2 class="white-text text-center">Features</h2>

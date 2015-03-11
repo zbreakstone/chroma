@@ -115,6 +115,14 @@ a:focus {
 		        transform: translateX(-50%);
 		cursor: ns-resize;
 	}
+		.down a {
+			font-size: 3.2777777778rem;
+		}
+		.down a:hover {
+			color: #fff;
+			text-shadow: #fff 0 0 10px;
+		}
+
 	/* ---- Begin Logo SVG Styles ---- */
 	.top-section .main-nav .logo svg circle {
 		transition: all .5s ease;
@@ -293,7 +301,7 @@ Begin Work Section
 ======================================== */
 
 .feature-intro-section {}
-	article.feature-intro-section {
+	.feature-intro-section {
 		position: relative;
 		min-height: 57vh;
 		background: url(../img/mountain-bg.jpg) center center no-repeat;
@@ -306,29 +314,30 @@ Begin Work Section
 		left: 0;
 		right: 0;
 	}
-.feature-section {
+.feature-items {
 	position: relative;
 	min-height: 50vh;
 	background: linear-gradient(135deg, rgba(222, 255, 90, .65) 10%, rgba(0, 182, 255, .65) 90%), url(../img/arctic-bg.jpg) center left no-repeat;
 	background-size: cover;
 	color: #fff;
 }
-	.feature-section li.feature {
+	.feature-items li.feature {
 		position: relative;
 		display: inline-block;
 		float: left;
 		width: calc(100% / 3);
 		height: 50vh;
+		overflow: hidden;
 		font-size: 3.1666666667rem;
 		transition: all .5s ease;
 	}
-	.feature-section li.feature:nth-child(1):hover {
+	.feature-items li.feature:nth-child(1):hover {
 		background: linear-gradient(135deg, rgba(196, 246, 109, .65) 10%, rgba(144, 229, 148, .65) 90%);
 	}
-	.feature-section li.feature:nth-child(2):hover {
+	.feature-items li.feature:nth-child(2):hover {
 		background: linear-gradient(135deg, rgba(144, 229, 148, .65) 10%, rgba(73, 206, 201, .65) 90%);
 	}
-	.feature-section li.feature:nth-child(3):hover {
+	.feature-items li.feature:nth-child(3):hover {
 		background: linear-gradient(135deg, rgba(73, 206, 201, .65) 10%, rgba(0, 182, 255, .65) 90%);
 	}
 		.feature div.feature-icon {
@@ -338,26 +347,31 @@ Begin Work Section
 			left: 50%;
 			-webkit-transform: translate(-50%, -50%);
 			        transform: translate(-50%, -50%);
-			transition: all .5s ease;
+			transition: all .25s ease;
 		}
 			.feature-section li.feature:hover div.feature-icon {
-				opacity: 0;
+				left: 11%;
+			}
+				.feature-section li.feature:hover div.feature-icon i {
+				color: #48677A;
 			}
 		.feature div.feature-desc {
 			position: absolute;
 			display: block;
 			top: 50%;
-			left: 50%;
+			left: 150%;
 			width: 100%;
-			padding: 0 7.81269074%;
+			padding: 0 7.81269074% 0 17.81269074%;
 			font-size: 1.1111111111rem;
-			opacity: 0;
+			opacity: 1;
+			color: #48677A;
 			-webkit-transform: translate(-50%, -50%);
 			        transform: translate(-50%, -50%);
-			transition: all 1.25s ease;
+			transition: all .25s ease;
 		}
 			.feature-section li.feature:hover div.feature-desc {
-				opacity: 1;
+				/*opacity: 1;*/
+				left: 50%;
 			}
 
 
@@ -395,7 +409,7 @@ Begin Work Section
 		width: 100%;
 		float: none;
 	}
-	article.feature-intro-section {
+	.feature-intro-section {
 		min-height: 25vh;
 	}
 	.feature-section li.feature {

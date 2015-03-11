@@ -38,8 +38,13 @@ $(document).ready(function(){
 
 $(document).ready(function(e) {
             
-	$('header.top-header ul li a').bind('click', function(e) {
+	$('.top-section nav > ul > li > a').bind('click', function(e) {
 	    e.preventDefault();
-	    $('html,body').animate({scrollTop: $(this.hash).offset().top - 0}, 300);                                                         
+	    $('html,body').animate({scrollTop: $(this.hash).offset().top - 0}, 1000);                                                         
+	});
+
+	$('h2.down > a').bind('click', function(e) {
+	    e.preventDefault();
+	    $('html,body').animate({scrollTop: $(this.hash).offset().top - 0}, 1000);                                                         
 	});
 });
