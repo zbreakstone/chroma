@@ -503,6 +503,11 @@ Begin Footer Section
 		width: 100%;
 		float: none;
 	}
+	.top-section .main-nav nav > ul {
+		text-align: center;
+		float: inherit;
+		margin: 30px 0;
+	}
 	.feature-intro-section {
 		min-height: 25vh;
 	}
