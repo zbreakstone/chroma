@@ -9,7 +9,8 @@
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body>
-		<section class="top-section fixed white-text" id="home">
+		<div class="home-holder" id="home"></div>
+		<section class="top-section fixed white-text" id="">
 			<div class="main-nav">
 				<div class="container clearfix">
 					<div class="logo">
@@ -53,9 +54,9 @@
 			</div>
 			<div class="hero text-center">
 				<article class="container">
-					<div class="headline wow bounceIn">
-						<h1>We are great</h1>
-						<h2>Scroll for more</h2>
+					<div class="headline white-text wow bounceIn">
+						<h1 class="white-text">We are great</h1>
+						<h2 class="white-text">Scroll for more</h2>
 					</div>
 				</article>
 				<h2 class="down">
@@ -231,7 +232,36 @@
 					</li>
 				</article>
 			</section>
+
+			<section class="contact-section" id="contact">
+				<div class="container">
+					<h2 class="text-center">Get In Touch</h2>
+					<article class="contact-form">
+						<form action="">
+							<input type="text" class="input" placeholder="Name" required="">
+							<input type="email" class="input" placeholder="Email" required="">
+							<textarea name="comment" id="" cols="30" rows="10" class="input" placeholder="Comments"></textarea>
+							<input type="submit" value="Submit">
+						</form>
+					</article>
+				</div>
+			</section>
 		</main>
+
+		<footer class="footer-section over">
+			<div class="container">
+				<nav class="footer-nav">
+					<ul class="text-center white-text">
+						<li><a href="#home">home</a></li>
+						<li><a href="#about">about</a></li>
+						<li><a href="#work">work</a></li>
+						<li><a href="#features">features</a></li>
+						<li><a href="#contact">contact</a></li>
+					</ul>
+					<div class="copyright white-text text-center">&#169; 2015 Chroma</div>
+				</nav>
+			</div>
+		</footer>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script src="js/wow.min.js"></script>

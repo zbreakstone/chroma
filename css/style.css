@@ -40,7 +40,7 @@ body, h1, h2, h3, h4, h5, h5, p {
 }
 
 h1 { font-size: 8.5333336724rem; font-weight: 400; margin: 0 0 30px 0; }
-h2 { font-size: 3.1999999152rem; font-weight: 100; }
+h2 { font-size: 3.1999999152rem; font-weight: 100; color: #48677A; }
 
 p { margin: 1rem; }
 
@@ -80,13 +80,21 @@ a:focus {
 		color: #fff;
 		transition: all .5s ease;
 	}
-	.white-text a:hover, .white-text a:focus {
+	.white-text a:hover {
 		color: #48677A;
+	}
+	.white-text a:focus {
+		color: #fff;
 	}
 
 .center { margin: 0 auto;}
 .text-center {
 	text-align: center;
+}
+
+.home-holder {
+	height: 0;
+	width: 0;
 }
 
 /* =================================================================== 
@@ -374,6 +382,92 @@ Begin Work Section
 				left: 50%;
 			}
 
+
+/* ========================================
+Begin Contact Section
+======================================== */
+.contact-section .container {
+	padding: 90px 3.43137254902%;
+}
+	.contact-section h2 {
+		margin: 0 0 60px;
+	}
+	.contact-form {
+		width: 36.5887982%;
+		display: block;
+		margin: 0 auto;
+		font-weight: 400;
+		font-size: 0.66666666666667rem;
+		line-height: 2rem;
+	}
+		.contact-form input.input,
+		.contact-form textarea.input {
+			display: block;
+			width: 100%;
+			padding: 13px 15px;
+			background: #FAFAFA;
+			border: none;
+			border-radius: 1px;
+			line-height: 0.8888888889rem;
+			transition: all 0.35s ease;
+		}
+		.contact-form input.input { margin: 0 0 16px 0; }
+		.contact-form textarea.input { margin: 0 0 30px 0; }
+		.contact-form input.input:focus,
+		.contact-form textarea.input:focus {
+			outline: 0px;
+			-webkit-transform: scale(1.025);
+			        transform: scale(1.025);
+			position: relative;
+			z-index: 1;
+		}
+		
+		/* =================================================================== 
+		   Placeholder text vendor prefixes
+		   =================================================================== */
+			.contact-form .input::-webkit-input-placeholder { color: #D8D8D8; font-weight: 400; font-size: 0.8888888889rem; }
+			.contact-form .input::-moz-placeholder { color: #D8D8D8; font-weight: 400; font-size: 0.8888888889rem; }
+			.contact-form input.input:-moz-placeholder { color: #D8D8D8; font-weight: 400; font-size: 0.8888888889rem; }
+			.contact-form .input:-ms-input-placeholder { color: #D8D8D8; font-weight: 400; font-size: 0.8888888889rem; }
+		/* =================================================================== 
+		   End placeholder text vendor prefixes
+		   =================================================================== */
+
+		.contact-form textarea.input {
+			height: 150px;
+			resize: none;
+		}
+		
+		.contact-form input[type="submit"] {
+			display: inherit;
+			margin: 0 auto;
+			padding: 14px 50px;
+			background: #48ceca;
+			border: none;
+			border-radius: 1px;
+			font-size: 0.8888888889rem;
+			color: #fff;
+		}
+
+/* ========================================
+Begin Footer Section
+======================================== */
+.footer-section {
+	background: #48677A;
+}
+	.footer-section .container {
+		padding: 41px 3.43137254902% 24px;
+	}
+		.footer-section nav > ul > li {
+			display: inline-block;
+			margin: 0 2.251618351%;
+			font-size: 1rem;
+		}
+			.footer-section nav > ul > li > a:hover { color: #48ceca;}
+		.footer-section .copyright {
+			font-size: 0.6666666667rem;
+			margin: 31px 0 0;
+		}
 
 
 
