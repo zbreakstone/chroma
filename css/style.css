@@ -106,6 +106,7 @@ a:focus {
 	min-height: 100vh;
 	background: linear-gradient(135deg, rgba(222, 255, 90, .65) 10%, rgba(0, 182, 255, .65) 90%), url(../img/gulf-bg.jpg) top left no-repeat;
 	background-size: cover;
+	background-attachment: fixed; 
 	color: #fff;
 }
 	.top-section .main-nav .logo {
