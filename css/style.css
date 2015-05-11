@@ -570,6 +570,9 @@ Begin Footer Section
 	.over {
 		position: static;
 	}
+	.top-section {
+		background-position: top;
+	}
 	.top-section .main-nav .logo {
 		display: block;
 		width: 100%;
